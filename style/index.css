@@ -1,0 +1,356 @@
+body {
+    background-color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+a {
+    color: #000;
+}
+
+.branco {
+    height: 10px;
+    background-color: white;
+}
+
+
+/* header */
+
+.header {
+    background-color: #2d9c6a;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    position: fixed;
+    width: 100vw;
+    z-index: 3;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #2d9c6a;
+}
+
+.header li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+.header li a:hover {
+    background-color: black;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+    background-color: #2d9c6a;
+}
+
+.header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+}
+
+
+/* menu */
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    font-weight: 600;
+}
+
+
+/* menu icon */
+
+.header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+    top: -5px;
+}
+
+
+/* menu btn */
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked~.menu {
+    max-height: 240px;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon {
+    background: transparent;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+    .header li {
+        float: left;
+    }
+    .header li a {
+        padding: 20px 30px;
+    }
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .header .menu-icon {
+        display: none;
+    }
+}
+
+
+/*************************************************************************************/
+
+.container {
+    margin: 0 auto;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding-top: 3%;
+}
+
+.QuemSomos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: auto;
+    position: relative;
+}
+
+#beneficios {
+    text-align: center;
+    color: #f1e3b1;
+    font-weight: bolder;
+    font-size: 23px;
+    padding-bottom: 2%;
+}
+
+h3 {
+    text-align: center;
+    color: #2d9c6a;
+    font-weight: 800;
+    font-size: 80px;
+    padding-bottom: 1%;
+    padding-left: 5%;
+}
+
+.marrom {
+    text-align: justify;
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+    font-size: 40px;
+    padding-left: 5%;
+    padding-top: 2%;
+}
+
+.white {
+    text-align: center;
+    text-align: justify;
+    color: black;
+    font-size: 25px;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+.coluna2 {
+    align-items: center;
+}
+
+.mySlides {
+    box-shadow: 25px 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.texto-banner1 {
+    text-align: center;
+    width: auto;
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+
+.texto-banner1 p {
+    font-size: 23px;
+    font-weight: 600;
+    color: black;
+}
+
+
+/**********************************************************************************************************/
+
+.beneficios-grid {
+    margin-top: 3%;
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+
+.beneficios-items {
+    text-align: center;
+}
+
+.text-beneficios {
+    color: black;
+    margin-top: 10%;
+    padding-top: 5%;
+    margin-bottom: 20%;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.gif {
+    align-items: center;
+    margin-top: 5%;
+}
+
+.gif2 {
+    display: none;
+}
+
+.aplicativo {
+    margin-top: 8%;
+    align-items: center;
+}
+
+.aplicativo p {
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+.aplicativo-texto {
+    margin-top: 5%;
+    text-align: center;
+    margin-bottom: 10%;
+    font-size: 20px;
+}
+
+.banner2 {
+    margin-top: 5%;
+}
+
+
+/**********************************************************************************************************/
+
+
+/*******************************************************************************/
+
+@media (max-width: 1000px) {
+    .main {
+        width: 800px;
+        height: auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .mySlides {
+        display: none;
+    }
+    .coluna2 {
+        padding-right: 3%;
+    }
+    .beneficios-grid {
+        grid-gap: 0px;
+    }
+    .gif {
+        display: none;
+    }
+    .gif2 {
+        margin-top: 5px;
+        display: block;
+    }
+    .branco {
+        height: 50px;
+    }
+    @media (max-width: 760px) {
+        .mySlides {
+            display: none;
+        }
+        .coluna2 {
+            padding-right: 3%;
+        }
+        .beneficios-grid {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 0px;
+        }
+        .beneficios-items {
+            grid-column: 2/3;
+        }
+        .gif {
+            display: none;
+        }
+        .gif2 {
+            margin-top: 5px;
+            display: block;
+        }
+        .branco {
+            height: 55px;
+        }
+        h3 {
+            font-size: 50px;
+        }
+        .marrom {
+            font-size: 20px;
+        }
+    }
+}

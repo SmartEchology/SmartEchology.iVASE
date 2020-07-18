@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/iVASE - LOGO SOLO.png" class="icone-head">
+    <link rel="stylesheet" href="js/bootstrap.min.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/index.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <title>Smart Echology</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Smart Echology</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a style="color: white; " href="index.html">Home</a></li>
+            <li><a style="color: white;" href="sobre.html">Sobre</a></li>
+            <li><a style="color: white;" href="projeto.html">Projeto</a></li>
+            <li><a style="color: white;" href="contato.html">Contato</a></li>
+        </ul>
+        <script src="js/jssor.slider-28.0.0.min.js" type="text/javascript"></script>
+    </header>
+    <main>
+        <div class="branco"></div>
+        <script type="text/javascript">
+            window.jssor_1_slider_init = function() {
+
+                var jssor_1_SlideshowTransitions = [{
+                    $Duration: 800,
+                    x: -0.3,
+                    $During: {
+                        $Left: [0.3, 0.7]
+                    },
+                    $Easing: {
+                        $Left: $Jease$.$InCubic,
+                        $Opacity: $Jease$.$Linear
+                    },
+                    $Opacity: 2
+                }, {
+                    $Duration: 800,
+                    x: 0.3,
+                    $SlideOut: true,
+                    $Easing: {
+                        $Left: $Jease$.$InCubic,
+                        $Opacity: $Jease$.$Linear
+                    },
+                    $Opacity: 2
+                }];
+
+                var jssor_1_options = {
+                    $AutoPlay: 1,
+                    $SlideshowOptions: {
+                        $Class: $JssorSlideshowRunner$,
+                        $Transitions: jssor_1_SlideshowTransitions,
+                        $TransitionsOrder: 1
+                    },
+                    $ArrowNavigatorOptions: {
+                        $Class: $JssorArrowNavigator$
+                    },
+                    $ThumbnailNavigatorOptions: {
+                        $Class: $JssorThumbnailNavigator$,
+                        $Orientation: 2,
+                        $NoDrag: true
+                    }
+                };
+
+                var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+                /*#region responsive code begin*/
+
+                var MAX_WIDTH = 1400;
+
+                function ScaleSlider() {
+                    var containerElement = jssor_1_slider.$Elmt.parentNode;
+                    var containerWidth = containerElement.clientWidth;
+
+                    if (containerWidth) {
+
+                        var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                        jssor_1_slider.$ScaleWidth(expectedWidth);
+                    } else {
+                        window.setTimeout(ScaleSlider, 5);
+                    }
+                }
+
+                ScaleSlider();
+
+                $Jssor$.$AddEvent(window, "load", ScaleSlider);
+                $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+                $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+                /*#endregion responsive code end*/
+            };
+        </script>
+        <style>
+            /*jssor slider loading skin spin css*/
+            
+            .jssorl-009-spin img {
+                animation-name: jssorl-009-spin;
+                animation-duration: 1.0s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            
+            @keyframes jssorl-009-spin {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+            
+            .jssora061 {
+                display: block;
+                position: absolute;
+                cursor: pointer;
+            }
+            
+            .jssora061 .a {
+                fill: none;
+                stroke: #fff;
+                stroke-width: 360;
+                stroke-linecap: round;
+            }
+            
+            .jssora061:hover {
+                opacity: .8;
+            }
+            
+            .jssora061.jssora061dn {
+                opacity: .5;
+            }
+            
+            .jssora061.jssora061ds {
+                opacity: .3;
+                pointer-events: none;
+            }
+        </style>
+        <div id="jssor_1" style=" position:relative;margin:0 auto;top:0px;width:980px;height:440px;overflow:hidden;visibility:hidden;">
+
+            <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+                <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+            </div>
+            <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:440px;overflow:hidden;">
+                <div>
+                    <img data-u="image" src="img/vaso edit.png">
+                    <div u="thumb">
+                    </div>
+                </div>
+                <div>
+                    <img data-u="image" src="img/vaso edit2.png" />
+                    <div u="thumb">
+                    </div>
+                </div>
+            </div><a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">image gallery</a>
+
+            <div u="thumbnavigator" style="position:absolute;bottom:0px;left:0px;width:980px;height:50px;color:#FFF;overflow:hidden;cursor:default;background-color:transparent;">
+                <div u="slides">
+                    <div u="prototype" style="position:absolute;top:0;left:0;width:980px;height:50px;">
+                        <div u="thumbnailtemplate" style="position:absolute;top:0;left:0;width:100%;height:100%;font-family:arial,helvetica,verdana;font-weight:normal;line-height:50px;font-size:16px;padding-left:10px;box-sizing:border-box;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div data-u="arrowleft" class="jssora061" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+        <path class="a" d="M11949,1919L5964.9,7771.7c-127.9,125.5-127.9,329.1,0,454.9L11949,14079"></path>
+      </svg>
+            </div>
+            <div data-u="arrowright" class="jssora061" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+        <path class="a" d="M5869,1919l5984.1,5852.7c127.9,125.5,127.9,329.1,0,454.9L5869,14079"></path>
+      </svg>
+            </div>
+        </div>
+        <script type="text/javascript">
+            jssor_1_slider_init();
+        </script>
+        <div class="container">
+            <div class="linha">
+                <div class="QuemSomos">
+                    <div class="coluna2">
+                        <ul>
+                            <li>
+                                <div>
+                                    <h3>iVASE </h3>
+                                </div>
+
+                            </li>
+                            <li>
+                                <div>
+                                    <p class="marrom">O vaso que cuida de suas plantas enquanto você estiver ausente! </p>
+
+                                    <p class="white"> O iVASE é um vaso inteligente que ajuda suas plantas a florescer. O sistema de auto-rega e os sensores embutidos monitoram sua planta o tempo todo. É jardinagem fácil!</p>
+
+                                    <p class="white"> Veja como funciona abaixo!</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="beneficios-grid">
+                <div class="beneficios-items">
+                    <img class="image-benefits" src="img/b1.png" width="50px" height="50px" alt="" srcset="">
+                    <p class="text-beneficios">Autoirrigável</p>
+                </div>
+                <div class="beneficios-items">
+                    <img class="image-benefits" src="img/b2.png" width="55px" height="50px" alt="" srcset="">
+                    <p class="text-beneficios">Reservatório</p>
+                </div>
+                <div class="beneficios-items">
+                    <img class="image-benefits" src="img/b3.png" width="50px" height="50px" alt="" srcset="">
+                    <p class="text-beneficios">Antidengue</p>
+                </div>
+                <div class="beneficios-items">
+                    <img class="image-benefits" src="img/b4.png" width="50px" height="50px" alt="" srcset="">
+                    <p class="text-beneficios">Dreno</p>
+                </div>
+            </div>
+            <div class="gif"> <img src="img/5bec508c62fcb.gif" alt="" width="590px" height="480px"></div>
+            <div class="gif2"> <img src="img/5bec508c62fcb.gif" alt="" width="380px" height="320px"></div>
+            <div class="texto-banner1">
+                <p>A junção da tecnologia e das plantas. Cuidar da natureza nunca foi tão fácil! </p>
+            </div>
+            <div class="banner1"> <img src="img/banner1.jpeg" alt="" width="100%" height="auto"></div>
+            <div class="aplicativo">
+                <div>
+                    <p>Baixe nosso aplicativo!</p>
+                </div>
+            </div>
+            <div><img src="img/celular.png" alt="" width="190px" height="400px"></div>
+            <div class="aplicativo-texto">
+                <p>Luz, temperatura, umidade do solo e nível de reservatório de água: você está conectado em tempo real à saúde da sua planta. Você sabe exatamente o que precisa. Todos os dados coletados são enviados para o seu smartphone com a tecnologia
+                    sem fio Bluetooth, um padrão ecológico. </p>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <footer style="background: #0d7373; text-align: center; padding-bottom: 3%; padding:5%;">
+        <p class="cp-text" style="color: white;">
+            © Copyright 2020 Smart Echology. Todos os direitos reservados.
+        </p>
+
+
+    </footer>
+
+
+
+</body>
+
+</html>
