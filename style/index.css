@@ -322,6 +322,10 @@ h3 {
     .branco {
         height: 50px;
     }
+    .header .logo {
+        font-size: 21px;
+    }
+}
     @media (max-width: 760px) {
         .mySlides {
             display: none;
@@ -352,5 +356,7 @@ h3 {
         .marrom {
             font-size: 20px;
         }
+    .header .logo {
+        font-size: 21px;
     }
 }
