@@ -262,6 +262,9 @@ main {
         position: absolute;
         bottom: 0;
     }
+    .header .logo {
+        font-size: 21px;
+    }
 }
 
 @media (max-width: 760px) {
@@ -275,5 +278,8 @@ main {
     footer {
         position: absolute;
         bottom: 0;
+    }
+    .header .logo {
+        font-size: 21px;
     }
 }
