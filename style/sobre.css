@@ -389,9 +389,7 @@ footer {
     .titulo {
         flex-direction: center;
     }
-    .header .logo {
-        font-size: 21px;
-    }
+   
 }
 
 @media (max-width: 760px) {
@@ -417,7 +415,5 @@ footer {
     .flip-card {
         margin: 0 auto;
     }
-    .header .logo {
-        font-size: 21px;
-    }
+    
 }
