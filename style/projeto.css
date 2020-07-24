@@ -285,6 +285,18 @@
         .fotos {
             display: none;
         }
+ .texto-banner1 {
+            text-align: center;
+            width: auto;
+            margin-top: 6%;
+            margin-bottom: 5%;
+        }
+        
+        .white {
+            margin-top: 10%;
+            font-weight: bolder;
+            font-size: 30px;
+        }
         /***************************************************************************/
         
         @media (max-width: 1000px) {
