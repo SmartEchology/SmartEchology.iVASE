@@ -296,6 +296,7 @@
             margin-top: 10%;
             font-weight: bolder;
             font-size: 30px;
+            text-aling: center; 
         }
         /***************************************************************************/
         
@@ -330,8 +331,11 @@
                 font-size: 15px;
             }
                 .header .logo {
-        font-size: 21px;
+               font-size: 21px;
     }
+                .white {
+                font-size: 15px;
+            }
         }
         
         @media (max-width: 760px) {
@@ -361,4 +365,7 @@
                 .header .logo {
         font-size: 21px;
     }
+                .white {
+                font-size: 15px;
+            }
         }
